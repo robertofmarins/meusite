@@ -17,6 +17,9 @@ db_config = {
 def index():
     return render_template("index.html")
 
+if __name__ == '__main__':
+    app.run(degub=True)
+
 # Rota para processar os dados enviados
 @app.route("/submit", methods=["POST"])
 def submit():
