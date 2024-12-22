@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Configuração da conexão com o banco de dados
 db_config = {
-    "dbname": "cadastro",
+    "dbname": "meu site",
     "user": "postgres",
     "password": "Pretinha123**",
     "host": "db.tdmatydkdczvyaftjqzp.supabase.co",
@@ -16,9 +16,6 @@ db_config = {
 @app.route("/")
 def index():
     return render_template("index.html")
-
-if __name__ == '__main__':
-    app.run(degub=True)
 
 # Rota para processar os dados enviados
 @app.route("/submit", methods=["POST"])
@@ -41,3 +38,7 @@ def submit():
         return "Dados enviados com sucesso!"
     except Exception as e:
         return f"Ocorreu um erro: {e}"
+
+# Iniciar o servidor
+if __name__ == "__main__":
+    app.run(debug=True)
