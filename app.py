@@ -8,7 +8,7 @@ db_config = {
     "dbname": "cadastro",
     "user": "postgres",
     "password": "Pretinha123**",
-    "host": "localhost",
+    "host": "db.tdmatydkdczvyaftjqzp.supabase.co",
     "port": "5432"
 }
 
@@ -41,7 +41,3 @@ def submit():
         return "Dados enviados com sucesso!"
     except Exception as e:
         return f"Ocorreu um erro: {e}"
-
-# Iniciar o servidor
-if __name__ == "__main__":
-    app.run(debug=True)
