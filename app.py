@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 # Configuração da conexão com o banco de dados
 db_config = {
-    "dbname": "meu site",
-    "user": "postgres",
+    "dbname": "postgres",
+    "user": "postgres.tdmatydkdczvyaftjqzp",
     "password": "Pretinha123**",
-    "host": "db.tdmatydkdczvyaftjqzp.supabase.co",
-    "port": "5432"
+    "host": "aws-0-sa-east-1.pooler.supabase.com",
+    "port": "6543"
 }
 
 # Rota para exibir o formulário
