@@ -19,10 +19,9 @@
     <meta property="og:description" content="Portfólio // Roberto Marins" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+    </style>
     <link rel="stylesheet" href="../static/assets/css/style.css" />
     <link
       rel="shortcut icon"
@@ -32,7 +31,6 @@
     <link rel="icon" href="../static/assets/image/logo-page.svg" />
     <link rel="apple-touch-icon" href="../static/assets/image/logo-page.svg" />
     <link rel="canonical" href="https://robertomarins.com.br/" />
-    <script src="../static/assets/js/svg-inject.min.js"></script>
     <title>Portfólio - Roberto Marins</title>
   </head>
 
@@ -41,60 +39,46 @@
       <div class="layout">
         <nav>
           <img
-              src="../static/assets/image/logoc.svg"
-              alt="logo"
-              onload="SVGInject(this)"
-              id="logo"
-            />
+            src="../static/assets/image/logoteste.svg"
+            alt="logo"
+            id="logo"
+          />
           <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
           <ul class="nav-list">
-            <li><a alt="Início" title="Início" href="#inicio">Início</a></li>
+            <li><a alt="Início" title="Início" href="#inicio"> Início </a></li>
             <li>
-              <a alt="Sobre mim" title="Sobre mim" href="#s-about">Sobre mim</a>
+              <a alt="Sobre mim" title="Sobre mim" href="#s-about">
+                Sobre mim
+              </a>
             </li>
-            <li><a href="#s-projetos">Projetos</a></li>
-            <li><a href="#s-contato">Contato</a></li>
+            <li><a href="#s-projetos"> Projetos </a></li>
+            <li><a href="#s-contato"> Contato </a></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <aside>
+      <nav>
+        <a href="https://linkedin.com/in/betorfm/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/image/linkedin.png" alt=""/></a>
+        <a href="https://github.com/betorfm" target="_blank" rel="noopener noreferrer"><img src="../static/assets/image/github.png" alt="" /></a>
+        <a href="mailto:contato@robertomarins.com.br" target="_blank" rel="noopener noreferrer"><img src="../static/assets/image/email.png" alt="" /></a>
+        <a href="https://wa.me/5521977061641" target="_blank" rel="noopener noreferrer"><img src="../static/assets/image/whatsapp.png" alt="" /></a>
+      </nav>
+    </aside>
+
     <main>
       <section id="inicio">
         <div class="layout">
           <div id="home">
+            <canvas id="canvas"></canvas>
             <div id="home-container-text">
-              <h1 class="delayMediumReveal">
-                Olá, seja bem-vindo.
-              </h1>
-              <p class="typewriter">
-                Soluções personalizadas para transformar suas ideias em presença digital.
-
-                Trabalho de forma independente para oferecer a você um serviço personalizado e único. Meu objetivo é criar sites que representem sua marca, encantem seus clientes e alcancem resultados reais.
-              </p>
-
-              <a
-                href="#"
-                rel="noopener"
-                target="_blank"
-                class="delayExtraBigReveal"
-              >
-                Contate-me
-              </a>
+              <h1 class="letras">Olá, seja bem vindo!!</h1>
             </div>
-
-            <img
-              src="../static/assets/image/logo.svg"
-              alt="logo"
-              onload="SVGInject(this)"
-              id="logo"
-              width="300px"
-              height="300px"
-            />
           </div>
         </div>
       </section>
@@ -103,98 +87,87 @@
         <div class="layout">
           <div>
             <div id="testando">
-              <h4 class="delayMediumReveal">Quem sou</h4>
+              <h4 class="delayMediumReveal">Olá, me chamo</h4>
               <h2 class="delaySmallReveal">Roberto Marins</h2>
-              <h3 class="delayMediumReveal">Programador FullStack</h3>
+              <h3 class="delayMediumReveal">Sou Desenvolvedor FullStack</h3>
 
-              <p class="delayLargeReveal">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus explicabo impedit, tempore dolorum, voluptatem
-                assumenda placeat quos dolor veritatis quod earum, quam quas
-                distinctio vel deserunt laudantium quis eius ut.
+              <p class="textsb">
+                Apaixonado por tecnologia, criatividade e por transformar ideias
+                em algo real. Adoro desafios, aprender coisas novas e criar
+                projetos que conectem pessoas e soluções de maneira prática e
+                inovadora. Sou alguém que valoriza dedicação, simplicidade e um
+                bom resultado. Amo mergulhar em cada detalhe para entregar algo
+                que faça sentido e que cause impacto positivo. Quando não estou
+                programando, gosto de estudar, buscar inspirações e continuar
+                evoluindo como pessoa e profissional. Meu objetivo é construir
+                projetos que falem por si só e ajudem pessoas e negócios a
+                alcançarem o que desejam.
               </p>
-              <nav class="delayLargeReveal">
-                <ul>
-                  <a
-                    href="https://www.linkedin.com/in/betorfm/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="../static/assets/icons/linkedin.svg"
-                        width="60px"
-                      height="60px"
-                        rel="noopener"
-                        alt="Ícone do LinkedIn"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-                  <a
-                    href="https://github.com/betorfm"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="../static/assets/icons/github.svg"
-                        width="60px"
-                      height="60px"
-                        alt="Ícone do GitHub"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-                </ul>
-              </nav>
             </div>
             <div id="creator-photo" class="delayMediumReveal">
-                <h2 class="delaySmallReveal">Habilidades</h2>
-                <div id="skills-cardsteste">
-                  <article class="html intervalCardReveal">
-                    <img
-                      src="../static/assets/icons/html5.svg"
-                      width="60px"
-                      height="60px"
-                      alt="ícone do html"
-                    />
-                  </article>
-                  <article class="css intervalCardReveal">
-                    <img
-                      src="../static/assets/icons/css3.svg"
-                      width="60px"
-                      height="60px"
-                      alt="ícone do css"
-                    />
-                  </article>
-                  <article class="js intervalCardReveal">
-                    <img
-                      src="../static/assets/icons/js.svg"
-                      width="60px"
-                      height="60px"
-                      alt="ícone do javascript"
-                    />
-                  </article>
-                  <article class="python intervalCardReveal">
-                    <img
-                      src="../static/assets/icons/python.svg"
-                      width="60px"
-                      height="60px"
-                      alt="ícone do python"
-                    />
-                  </article>
-                  <article class="postgre intervalCardReveal">
-                    <img
-                      src="../static/assets/icons/postgre.svg"
-                      width="60px"
-                      height="60px"
-                      alt="ícone do postgreSQL"
-                    />
-                  </article>
-                </div>
-                <article id="skills-textteste">
-                  <p class="delayMediumReveal changeDescription">
-                    *passe o cursor do mouse no card para ler*
-                  </p>
+              <h2 class="delaySmallReveal">Habilidades</h2>
+              <div id="skills-cardsteste">
+                <article
+                  class="image-container"
+                  data-description="HTML (HyperText Markup Language) é a linguagem usada para estruturar o conteúdo de sites, como textos, imagens e links. Ele organiza os elementos da página, sendo a base de toda a web"
+                >
+                  <img
+                    src="../static/assets/icons/html5.svg"
+                    width="60px"
+                    height="60px"
+                    alt="ícone do html"
+                  />
                 </article>
-              
+                <article
+                  class="image-container"
+                  data-description="CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas da web. Ele define cores, fontes, tamanhos e layouts, tornando os sites mais bonitos e atraentes."
+                >
+                  <img
+                    src="../static/assets/icons/css3.svg"
+                    width="60px"
+                    height="60px"
+                    alt="ícone do css"
+                  />
+                </article>
+                <article
+                  class="image-container"
+                  data-description="JavaScript é uma linguagem de programação usada para tornar as páginas da web interativas. Com ela, é possível criar animações, validação de formulários e respostas dinâmicas aos usuários."
+                >
+                  <img
+                    src="../static/assets/icons/js.svg"
+                    width="60px"
+                    height="60px"
+                    alt="ícone do javascript"
+                  />
+                </article>
+                <article
+                  class="image-container"
+                  data-description="Python é uma linguagem de programação poderosa e de alto nível, amplamente usada para desenvolvimento web, análise de dados, inteligência artificial e automação."
+                >
+                  <img
+                    src="../static/assets/icons/python.svg"
+                    width="60px"
+                    height="60px"
+                    alt="ícone do python"
+                  />
+                </article>
+                <article
+                  class="image-container"
+                  data-description="PostgreSQL é um sistema de gerenciamento de banco de dados relacional avançado, conhecido por sua robustez, flexibilidade e conformidade com os padrões SQL."
+                >
+                  <img
+                    src="../static/assets/icons/postgre.svg"
+                    width="60px"
+                    height="60px"
+                    alt="ícone do postgreSQL"
+                  />
+                </article>
+              </div>
+              <article id="skills-textteste">
+                <p id="changeDescription">
+                  *passe o cursor do mouse no card para ler*
+                </p>
+              </article>
             </div>
           </div>
         </div>
@@ -202,92 +175,109 @@
 
       <section id="s-projetos">
         <div class="layout">
-          <h2 class="delaySmallReveal">Projetos <span>.</span></h2>
+          <h2 class="delaySmallReveal">Projetos</h2>
           <div id="projects">
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
-              <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
-              </p>
+            <a href="">
+              <article class="intervalCardReveal none">
+                <h3>Em construção...</h3>
+                <p>
+                  Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                </p>
+              </article>
+            </a>
+            <a href="">
+              <article class="intervalCardReveal none">
+                <h3>Em construção...</h3>
+                <p>
+                  Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                </p>
+              </article>
+            </a>
 
-              <a href="#" id="teslabank">Visualizar projeto </a>
-            </article>
-
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
-              <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
-              </p>
-              <a href="#" id="teslabank">Visualizar projeto </a>
-            </article>
-
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
-              <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
-              </p>
-              <a href="#" id="teslabank">Visualizar projeto </a>
-            </article>
-
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
-              <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
-              </p>
-              <a href="#" id="teslabank">Visualizar projeto </a>
-            </article>
-
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
-              <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
-              </p>
-              <a href="#" id="teslabank">Visualizar projeto </a>
-            </article>
-
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
-              <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
-              </p>
-              <a href="#" id="teslabank">Visualizar projeto </a>
-            </article>
+            <a href="">
+              <article class="intervalCardReveal none">
+                <h3>Em construção...</h3>
+                <p>
+                  Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                </p>
+              </article>
+            </a>
+            <a href="">
+              <article class="intervalCardReveal none">
+                <h3>Em construção...</h3>
+                <p>
+                  Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                </p>
+              </article>
+            </a>
+            <a href="">
+              <article class="intervalCardReveal none">
+                <h3>Em construção...</h3>
+                <p>
+                  Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                </p>
+              </article>
+            </a>
+            <a href="">
+              <article class="intervalCardReveal none">
+                <h3>Em construção...</h3>
+                <p>
+                  Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                </p>
+              </article>
+            </a>
           </div>
-          <a
-            href="https://github.com/betorfm"
-            rel="noopener"
-            target="_blank"
-            class="delayExtraBigReveal"
-            >Repositórios no GitHub</a
-          >
         </div>
       </section>
 
       <section id="s-contato">
         <div class="layout">
-              <div id="form-container" class="delaySmallReveal">
-                <form id="form" action="/submit" method="POST">
-                  <h2>Formulário de Contato</h2>
-                  <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-                  </div>
-                  <button type="submit">Enviar</button>
-                </form>
-
-                <div id="response-message" style="margin-top: 10px; color: green; font-size: 12px; text-align: center;"></div>
-
+          <div id="form-container" class="delaySmallReveal">
+            <form id="form" action="/submit" method="POST">
+              <h2>Formulário de Contato</h2>
+              <div class="form-group">
+                <label for="name">Nome:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Digite seu nome"
+                  required
+                />
               </div>
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Digite seu e-mail"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="Digite seu telefone"
+                  required
+                />
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
 
-        
+            <div
+              id="response-message"
+              style="
+                margin-top: 10px;
+                color: green;
+                font-size: 12px;
+                text-align: center;
+              "
+            ></div>
+          </div>
         </div>
       </section>
 
@@ -303,35 +293,41 @@
       </footer>
     </main>
 
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-    <script type="module" src="../static/assets/js/main.js"></script>
-
-
     <script>
-      document.getElementById("form").addEventListener("submit", async function(event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-    
-        const form = event.target;
-        const formData = new FormData(form);
-    
-        try {
-          const response = await fetch("/submit", {
-            method: "POST",
-            body: formData
-          });
-    
-          if (response.ok) {
-            const message = await response.text();
-            document.getElementById("response-message").textContent = message;
-            form.reset(); // Limpa o formulário após o envio
-          } else {
-            document.getElementById("response-message").textContent = "Erro ao enviar os dados.";
-          }
-        } catch (error) {
-          document.getElementById("response-message").textContent = `Erro: ${error.message}`;
-        }
-      });
-    </script>
+      document
+        .getElementById("form")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
 
+          const form = event.target;
+          const formData = new FormData(form);
+
+          try {
+            const response = await fetch("/submit", {
+              method: "POST",
+              body: formData,
+            });
+
+            if (response.ok) {
+              const message = await response.text();
+              document.getElementById("response-message").textContent = message;
+              form.reset(); // Limpa o formulário após o envio
+            } else {
+              document.getElementById("response-message").textContent =
+                "Erro ao enviar os dados.";
+            }
+          } catch (error) {
+            document.getElementById(
+              "response-message"
+            ).textContent = `Erro: ${error.message}`;
+          }
+        });
+    </script>
+    <script src="../static/assets/js/letras.js"></script>
+    <script src="../static/assets/js/hoverChangeDescription.js"></script>
+    <script src="../static/assets/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="../static/assets/js/splash.js"></script>
+    <script src="../static/assets/js/descrição.js"></script>
   </body>
 </html>
