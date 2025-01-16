@@ -61,7 +61,6 @@ html {
   background-color: #4fc3f7;
   border-radius: 8px;
 }
-/*--------------mobile------------------*/
 
 /*-------------------------------header--------------------------*/
 header {
@@ -84,6 +83,9 @@ header .layout nav {
 
 header .layout nav #logo {
   width: 5%;
+  color: #fff;
+  font-size: 3rem;
+  width: 17%;
 }
 
 header .layout nav .nav-list {
@@ -385,65 +387,67 @@ canvas {
 
 #s-contato .layout h2 {
   margin-bottom: 32px;
-  color: #fff;
+  color: #000000;
   font-size: 3.2rem;
-  font-weight: 500;
 }
 
-#form-container {
-  width: 100%;
-  max-width: 400px;
-  margin: 50px auto;
+/* Estilização geral do formulário */
+#form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
   padding: 20px;
-  background-color: #000000;
-  border-radius: 8px;
-  border-style: hidden;
-  border: 1px solid #000000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
 }
 
-#s-contato .layout #form-container h2 {
-  text-align: center;
+/* Contêiner do grupo de inputs */
+.form-group {
+  position: relative; /* Necessário para posicionar a label */
   margin-bottom: 20px;
-  color: #ffffff;
 }
 
-/* Grupos do formulário */
-#s-contato .layout #form-container .form-group {
-  margin-bottom: 15px;
-}
-
-#s-contato .layout #form-container label {
-  display: block;
-  margin-bottom: 5px;
-  color: #ffffff;
-  font-size: 2rem;
-}
-
-#s-contato .layout #form-container input {
+/* Estilo do input */
+.form-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  font-size: 16px;
+  border: 1px solid #0400ff;
   border-radius: 4px;
-  font-size: 2rem;
+  outline: none;
 }
 
-/* Botão */
-#s-contato .layout #form-container button {
+/* Estilo da label */
+.form-group label {
+  position: absolute;
+  top: -10px; /* Posição da label em relação à borda superior do input */
+  left: 10px;
+  background: #ffffff; /* Fundo branco para evitar sobreposição */
+  padding: 0 5px; /* Ajuste para a borda */
+  font-size: 14px;
+  color: #000000;
+  pointer-events: none; /* Impede interação com a label */
+}
+
+/* Estilo do botão */
+button {
+  display: block;
   width: 100%;
   padding: 10px;
-  background-color: #1bd879;
+  font-size: 16px;
+  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
-  font-size: 3rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
-#s-contato .layout #form-container button:hover {
-  background-color: #000000;
+button:hover {
+  background-color: #45a049;
 }
+
+
 
 /*-----------------------footer-------------------------*/
 
