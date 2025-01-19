@@ -30,11 +30,11 @@ function addFugirEffect(textElement) {
       const deltaY = mouseY - letterY;
       const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
 
-      const maxDistance = 170; // Distância máxima de repulsão
-      const force = Math.max(0, maxDistance - distance) / maxDistance;
+      const maxDistance = 300; // Distância máxima de repulsão
+      const force = Math.max(1, maxDistance - distance) / maxDistance;
 
-      const offsetX = force * -deltaX * 5; // Ajusta a força no eixo X
-      const offsetY = force * -deltaY * 5; // Ajusta a força no eixo Y
+      const offsetX = force * -deltaX * 3; // Ajusta a força no eixo X
+      const offsetY = force * -deltaY * 3; // Ajusta a força no eixo Y
 
       letter.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     });

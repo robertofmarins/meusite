@@ -103,7 +103,7 @@ header .layout nav .nav-list li a {
   font-size: 180%;
   text-transform: uppercase;
   transition: 0.6s;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 
 header .layout nav .nav-list li a:hover {
@@ -178,7 +178,7 @@ canvas {
 }
 
 #inicio .layout #home #home-container-text .letras span {
-  color: rgb(167, 15, 15);
+  color: rgb(15, 99, 167);
   font-size: 8rem;
   padding: 40px 3px;
   transition: transform 0.1s;
@@ -387,7 +387,7 @@ canvas {
 
 #s-contato .layout h2 {
   margin-bottom: 32px;
-  color: #000000;
+  color: #ffffff;
   font-size: 3.2rem;
 }
 
@@ -396,7 +396,7 @@ canvas {
   max-width: 500px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 20px;
   border-radius: 25px;
 }
@@ -413,8 +413,10 @@ canvas {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #0400ff;
-  border-radius: 4px;
+  border-radius: 15px;
   outline: none;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Estilo da label */
@@ -422,10 +424,10 @@ canvas {
   position: absolute;
   top: -10px; /* Posição da label em relação à borda superior do input */
   left: 10px;
-  background: #ffffff; /* Fundo branco para evitar sobreposição */
-  padding: 0 5px; /* Ajuste para a borda */
+  background: #000000; /* Fundo branco para evitar sobreposição */
+  padding: 0px 10px; /* Ajuste para a borda */
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
   pointer-events: none; /* Impede interação com a label */
 }
 
@@ -435,7 +437,7 @@ button {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: #000000;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -444,7 +446,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0041a3;
 }
 
 
