@@ -1,5 +1,5 @@
 # Ignorar o ambiente virtual
-v_meusite/
+venv/
 
 # Ignorar arquivos de configuração do VS Code
 .vscode/
