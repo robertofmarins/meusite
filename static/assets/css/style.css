@@ -673,262 +673,32 @@ footer div {
 }
 
 @media screen and (max-width: 768px) {
-  /*------------header---------------*/
-  header {
-    height: 60px;
-  }
-  header .layout {
-    height: 60px;
-  }
-  header .layout nav {
-    height: 100%;
-  }
-  header .layout nav #logo {
-    width: 50%;
-  }
-  header .layout nav .nav-list li {
-    height: 10%;
-  }
-  .nav-list {
-    top: 60px;
-  }
-
-  /*------início--------*/
-
-  /*------sobre mim--------*/
-
-  #s-about {
-    padding: 80px 0 0 0;
-    background-color: #2e2e2e;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #s-about .layout > div {
-    background-color: #971515;
-    padding: 40px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  #s-about .layout div #testando {
-    width: 100%;
-    height: 350px;
-    background-color: #178f31;
-  }
-
-  #s-about .layout > div h4 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #fdfdfd;
-  }
-
-  #s-about .layout > div h2 {
-    font-size: 4rem;
-    font-weight: 500;
-    margin: 16px 0px;
-    color: #ffffff;
-  }
-  #s-about .layout > div h3 {
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin-bottom: 16px;
-    color: #ffffff;
-  }
-
-  #s-about .layout > div p {
-    font-size: 1.8rem;
-    color: #ffffff;
-    line-height: 160%;
-    margin: 32px 0px 48px 0px;
-  }
-  #s-about .layout > div nav ul {
-    background-color: #6b3b3b;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  #s-about .layout > div nav ul a {
-    border-radius: 6px;
-    padding: 1px;
-    border: 1px solid #000000;
-  }
-  #s-about .layout > div nav ul a:hover {
-    border: 1px solid #ffd54f;
-    border-radius: 6px;
-    padding: 10px;
-    transition: 2s all ease;
-  }
-  #s-about .layout div #creator-photo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-    background-color: #426270;
-  }
-  #s-about .layout div #creator-photo h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 32px;
-    color: #ffffff;
-    font-size: 3.2rem;
-    font-weight: 500;
-    height: 20%;
-    background-color: yellow;
-  }
-  #s-about .layout div #creator-photo #skills-cardsteste {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    height: 100%;
-    width: 100%;
-    background-color: #178f31;
-  }
-  #s-about .layout div #creator-photo #skills-cardsteste article {
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 4px;
-    transition: 2s all ease;
-    height: 60px;
-    width: 20px;
-    background-color: blue;
-  }
-  #s-about .layout div #creator-photo #skills-cardsteste article:hover {
-    border: 1px solid #ffd54f;
-  }
-  #s-about .layout div #creator-photo #skills-textteste {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 30%;
-    width: 63%;
-    background-color: #4fc3f7;
-  }
-  #s-about .layout div #creator-photo #skills-textteste .changeDescription {
-    transition: 2s all ease;
-  }
-
-  #s-about .layout div #creator-photo #skills-textteste p {
-    line-height: 3.2rem;
-    color: #ffffff;
-    font-size: 1.8rem;
-  }
-
-  /*------projetos--------*/
-
-  #s-projetos {
-    display: none;
-    padding: 100px 0 0 0;
-    text-align: center;
-    background-color: #111;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #s-projetos .layout {
-    display: none;
-    background-color: #111;
-  }
-  #s-projetos .layout h2 {
-    padding-bottom: 24px;
-    color: #fff;
-    font-size: 4rem;
-    font-weight: 500;
-  }
-  #s-projetos .layout h2 span {
-    color: #1bd879;
-  }
-  #s-projetos .layout #projects {
-    margin: 24px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-    text-align: left;
-  }
-  #s-projetos .layout #projects .teslabank {
-    border: 1px solid #1bd879;
-  }
-  #s-projetos .layout #projects .teslabank:hover {
-    border: 1px solid #1bd879;
-  }
-  #s-projetos .layout #projects > article {
-    height: auto;
-    padding: 32px;
-    margin: 8px;
-    flex-basis: calc(33% - 20px);
-    flex-grow: 1;
-    border: 1px solid #111;
-    transition: 1s all ease;
-    background-color: #151515;
-    height: auto;
-  }
-  #s-projetos .layout #projects > article:hover {
-    border: 1px solid #1bd879;
-  }
-  #s-projetos .layout #projects > article h3 {
-    color: #fff;
-    font-size: 2.4rem;
-    font-weight: 500;
-  }
-  #s-projetos .layout #projects > article p {
-    line-height: 24px;
-    margin: 24px 0px;
-    color: #9ca3af;
-    line-height: 3.2rem;
-    font-size: 1.8rem;
-  }
-  #s-projetos .layout a {
-    color: #1bd879;
-    position: static;
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  #s-projetos .layout a::after {
-    content: "";
-    position: sta;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: -7px;
-    left: 0;
-    background: linear-gradient(270deg, #1bd879 0%, #17161d 100%);
-    transform-origin: bottom right;
-    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  #s-projetos .layout a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  #s-projetos .layout a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: -7px;
-    left: 0;
-    transform-origin: bottom right;
-    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  #s-projetos .layout a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-  /*------contatos--------*/
+/*HEADER*/
+header {
+  display: none;
 }
+
+/*ASIDE*/
+aside {
+  display: none;
+}
+
+/*INÍCIO*/
+
+
+/*SOBRE*/
+
+
+/*PROJETOS*/
+
+
+/*CONTATO*/
+
+
+/*LAYOUT*/
+
+}
+ 
 
 .layout {
   max-width: 1400px;
