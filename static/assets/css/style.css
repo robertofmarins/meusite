@@ -82,10 +82,7 @@ header .layout nav {
 }
 
 header .layout nav #logo {
-  width: 5%;
-  color: #fff;
-  font-size: 3rem;
-  width: 17%;
+  width: 3%;
 }
 
 header .layout nav .nav-list {
