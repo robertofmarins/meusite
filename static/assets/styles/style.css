@@ -536,9 +536,8 @@ canvas {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #0400ff;
   border-radius: 15px;
-  outline: none;
+  outline: 1px solid #0400ff;
   background-color: #000000;
   color: #ffffff;
 }
