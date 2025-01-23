@@ -47,6 +47,41 @@ header .layout nav .nav-list li a:hover {
   background: #1a191f;
 }
 
+aside {
+  margin: 10px 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  width: 4%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+aside nav {
+  height: 300px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside nav a img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  transition: 0.2s;
+}
+
+aside nav a img:hover {
+  height: 45px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -127,41 +162,6 @@ html {
 
 /*-------------------------------header--------------------------*/
 /*--------------aside------------------*/
-aside {
-  margin: 10px 0 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  width: 4%;
-  height: 100vh;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-aside nav {
-  height: 300px;
-  width: 100px;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-aside nav a img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 30px;
-  transition: 0.2s;
-}
-
-aside nav a img:hover {
-  height: 45px;
-}
-
 /*--------------------------------home-----------------------*/
 canvas {
   display: block;
