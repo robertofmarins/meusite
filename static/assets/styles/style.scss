@@ -3,6 +3,7 @@
 @import './aside'; 
 @import './home';
 @import './about';
+@import './projects';
 * {
   padding: 0;
   margin: 0;
@@ -78,92 +79,7 @@ html {
 
 
 /*---------------------------projetos-------------------------*/
-#s-projetos {
-  padding: 100px 0 0 0;
-  text-align: center;
-  background-color: #000000;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#s-projetos .layout {
-  background-color: #000000;
-}
-#s-projetos .layout h2 {
-  padding-bottom: 24px;
-  color: #fff;
-  font-size: 4rem;
-  font-weight: 500;
-}
 
-#s-projetos .layout #projects {
-  margin: 24px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  text-align: left;
-  background-color: #000000;
-}
-
-#s-projetos .layout #projects > a article {
-  background-color: #151515;
-  border-radius: 10px;
-  border: solid 1px black;
-  width: 440px;
-  height: 250px;
-  margin: 10px;
-  text-align: center;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#s-projetos .layout #projects > a article:hover {
-  border: 1px solid #2600ff;
-}
-
-#s-projetos .layout #projects > a article h3 {
-  color: #fff;
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-#s-projetos .layout #projects > a article p {
-  line-height: 24px;
-  margin: 24px 0px;
-  color: #9ca3af;
-  line-height: 3.2rem;
-  font-size: 1.8rem;
-}
-
-#s-projetos .layout #projects > article {
-  height: auto;
-  padding: 32px;
-  margin: 8px;
-  flex-basis: calc(33% - 20px);
-  flex-grow: 1;
-  border: 1px solid;
-  transition: 1s all ease;
-  background-color: #151515;
-  height: auto;
-  border-radius: 10px;
-}
-#s-projetos .layout #projects > article:hover {
-  border: 1px solid #2600ff;
-}
-#s-projetos .layout #projects > article h3 {
-  color: #fff;
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-#s-projetos .layout #projects > article p {
-  line-height: 24px;
-  margin: 24px 0px;
-  color: #9ca3af;
-  line-height: 3.2rem;
-  font-size: 1.8rem;
-}
 
 /*------------------------------contato----------------------------*/
 #s-contato {
