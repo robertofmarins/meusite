@@ -86,12 +86,22 @@
   }
 
   @media screen and (max-width: 1200px){
-
+    #s-projetos .layout #projects > article {
+        flex-basis: calc(50% - 20px);
+      }
 
   }
   
   @media screen and (max-width: 992px){
-  
+    #s-projetos {
+        padding: 100px 0 0 0;
+        text-align: center;
+        background-color: #000000;
+        height: 100vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
   
   }
   

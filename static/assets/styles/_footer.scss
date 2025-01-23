@@ -28,7 +28,12 @@ footer {
   }
 
   @media screen and (max-width: 1200px){
-
+    footer .layout {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 48px;
+      }
 
   }
   
