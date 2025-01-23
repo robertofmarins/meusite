@@ -3,31 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Roberto Marins" />
-    <meta
-      name="description"
-      content="Meu nome é Roberto, desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO."
-    />
-    <meta
-      name="keywords"
-      content="sites, web, desenvolvimento, frontend, Roberto Marins, ui designer, programador, front-end, designer, ui, Roberto, freelancer, freela, website, portfólio"
-    />
+    <meta name="description" content="Meu nome é Roberto, desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO." />
+    <meta name="keywords" content="sites, web, desenvolvimento, frontend, Roberto Marins, ui designer, programador, front-end, designer, ui, Roberto, freelancer, freela, website, portfólio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#986DFF" />
+    <meta name="theme-color" content="#013285" />
     <meta name="copyright" content="Roberto Marins 2024" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta property="og:title" content="Portfólio // Roberto Marins" />
     <meta property="og:description" content="Portfólio // Roberto Marins" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-    </style>
     <link rel="stylesheet" href="../static/assets/styles/style.css" />
-    <link
-      rel="shortcut icon"
-      href="../static/assets/image/logo.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../static/assets/image/Logo.png" type="image/x-icon" />
     <link rel="icon" href="../static/assets/image/logo-page.svg" />
     <link rel="apple-touch-icon" href="../static/assets/image/logo-page.svg" />
     <link rel="canonical" href="https://robertomarins.com.br/" />
@@ -40,14 +27,10 @@
         <nav>
           <img id="logo" src="../static/assets/image/Logo.png" alt="">
           <ul class="nav-list">
-            <li><a alt="Início" title="Início" href="#inicio"> Início </a></li>
-            <li>
-              <a alt="Sobre mim" title="Sobre mim" href="#s-about">
-                Sobre mim
-              </a>
-            </li>
-            <li><a href="#s-projetos"> Projetos </a></li>
-            <li><a href="#s-contato"> Contato </a></li>
+            <li><a href="#inicio" alt="Início" title="Início"> Início </a></li>
+            <li><a href="#s-about" alt="Sobre mim" title="Sobre mim"> Sobre mim </a></li>
+            <li><a href="#s-projetos" alt="Projetos"> Projetos </a></li>
+            <li><a href="#s-contato" alt="Contato"> Contato </a></li>
           </ul>
         </nav>
       </div>
@@ -283,36 +266,7 @@
       </footer>
     </main>
 
-    <script>
-      document
-        .getElementById("form")
-        .addEventListener("submit", async function (event) {
-          event.preventDefault(); // Impede o envio padrão do formulário
-
-          const form = event.target;
-          const formData = new FormData(form);
-
-          try {
-            const response = await fetch("/submit", {
-              method: "POST",
-              body: formData,
-            });
-
-            if (response.ok) {
-              const message = await response.text();
-              document.getElementById("response-message").textContent = message;
-              form.reset(); // Limpa o formulário após o envio
-            } else {
-              document.getElementById("response-message").textContent =
-                "Erro ao enviar os dados.";
-            }
-          } catch (error) {
-            document.getElementById(
-              "response-message"
-            ).textContent = `Erro: ${error.message}`;
-          }
-        });
-    </script>
+    <script src="../static/assets/js/form.js"></script>
     <script src="../static/assets/js/letras.js"></script>
     <script type="module" src="../static/assets/js/main.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
