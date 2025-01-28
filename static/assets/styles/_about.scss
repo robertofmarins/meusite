@@ -97,3 +97,9 @@
   font-size: 2rem;
   color: #0fbb1d;
  }
+
+ @media (max-width: 480px){
+  #about{
+    display: none;
+  }
+ }
