@@ -50,12 +50,14 @@
     <section id="home"
       class="w-screen h-screen flex flex-col items-start justify-center bg-cover bg-center overflow-hidden"
       style="background-image: url('../static/assets/image/home.jpg')">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white ml-10">Roberto Marins</h1>
-      <p class="text-2xl typewriter-text text-white ml-10" id="typewriter"></p>
+      <div class="pb-50 md:pb-0">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white ml-10">Roberto Marins</h1>
+        <p class="text-2xl typewriter-text text-white ml-10" id="typewriter"></p>
+      </div>
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="h-screen w-full flex flex-col bg-gray-300 p-6 md:p-10 overflow-hidden pt-16">
+    <section id="sobre" class="min-h-screen w-full flex flex-col bg-gray-300 p-6 md:p-10 overflow-hidden pt-16">
       <div class="mb-4">
         <h1 class="text-5xl md:text-5xl font-bold text-gray-800">Sobre Mim</h1>
         <div class="h-0.5 bg-blue-600 rounded mt-2 w-2/3"></div>
@@ -98,7 +100,7 @@
       </div>
     </section>
 
-    <section id="resumo" class="min-h-screen flex items-center justify-center bg-gray-400 overflow-auto scroll-mt-14 md:scroll-mt-0 p-4">
+    <section id="resumo" class="min-h-screen w-full flex items-center justify-center bg-gray-400 overflow-auto scroll-mt-14 md:scroll-mt-0 p-4">
       <div class="max-w-3xl w-full">
         <h1 class="text-5xl font-bold mb-12 text-center">Resumo</h1>
     
@@ -160,7 +162,7 @@
     
 
     <section id="portfolio"
-      class="h-screen flex items-center justify-center bg-gray-500 text-white p-8 overflow-auto scroll-mt-14 md:scroll-mt-0">
+      class="min-h-screen w-full flex items-center justify-center bg-gray-500 text-white p-8 overflow-auto scroll-mt-14 md:scroll-mt-0">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-gray-700 p-4 rounded-lg transform hover:scale-105 transition duration-300">
           <h2 class="text-xl font-bold mb-2">Projeto 1</h2>
@@ -178,7 +180,7 @@
     </section>
 
     <section id="habilidades"
-      class="h-screen flex flex-col items-center justify-center bg-gray-600 text-white overflow-hidden scroll-mt-14 md:scroll-mt-0">
+      class="min-h-screen w-full flex flex-col items-center justify-center bg-gray-600 text-white overflow-hidden scroll-mt-14 md:scroll-mt-0">
     
       <h1 class="text-5xl font-bold mb-6">Habilidades</h1>
       <div class="bg-amber-400 flex flex-wrap justify-center">
@@ -222,7 +224,7 @@
   
 
     <section id="contatos"
-      class="h-screen flex flex-col items-center justify-center bg-gray-700 text-white p-8 space-y-6 overflow-auto scroll-mt-14 md:scroll-mt-0">
+      class="min-h-screen w-full flex flex-col items-center justify-center bg-gray-700 text-white p-8 space-y-6 overflow-auto scroll-mt-14 md:scroll-mt-0">
       <h1 class="text-5xl font-bold">Contatos</h1>
       <form class="w-full max-w-lg space-y-4">
         <input type="text" placeholder="Nome" class="w-full p-2 rounded text-black" required>
@@ -245,30 +247,6 @@
   <script src="../static/assets/js/form.js"></script>
   <script src="../static/assets/js/sidebar.js"></script>
   <script src="../static/assets/js/typewriter.js"></script>
-  <script>
-
-
-
-
-
-    function calcularIdade(dataNascimento) {
-      const hoje = new Date();
-      const nascimento = new Date(dataNascimento);
-      let idade = hoje.getFullYear() - nascimento.getFullYear();
-      const mes = hoje.getMonth() - nascimento.getMonth();
-
-      if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
-        idade--;
-      }
-
-      return idade;
-    }
-
-    // Defina sua data de nascimento aqui: 'AAAA-MM-DD'
-    const minhaIdade = calcularIdade('1988-09-07');
-    document.getElementById('idade').textContent = minhaIdade;
-  </script>
-
+  <script src="../static/assets/js/idade.js"></script>
 </body>
-
 </html>
