@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const habilidades = document.querySelectorAll('#habilidades .flex.flex-col');
 const descricao = document.getElementById('descricao');
 
@@ -12,4 +13,5 @@ habilidades.forEach(habilidade => {
     // Atualiza a descrição
     descricao.textContent = habilidade.getAttribute('data-descricao');
   });
+});
 });
