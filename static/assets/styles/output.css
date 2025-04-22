@@ -226,6 +226,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .inset-y-0 {
     inset-block: calc(var(--spacing) * 0);
   }
