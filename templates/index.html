@@ -33,7 +33,6 @@
     <nav class="mt-8 space-y-4">
       <a href="#home" class="block hover:bg-gray-700 p-2 rounded">Home</a>
       <a href="#sobre" class="block hover:bg-gray-700 p-2 rounded">Sobre</a>
-      <a href="#resumo" class="block hover:bg-gray-700 p-2 rounded">Resumo</a>
       <a href="#portfolio" class="block hover:bg-gray-700 p-2 rounded">Portfólio</a>
       <a href="#habilidades" class="block hover:bg-gray-700 p-2 rounded">Habilidades</a>
       <a href="#contatos" class="block hover:bg-gray-700 p-2 rounded">Contatos</a>
@@ -102,78 +101,25 @@
       </div>
     </section>
 
-    <section id="resumo" class="min-h-screen w-full flex items-center justify-center bg-gray-400 overflow-auto scroll-mt-14 md:scroll-mt-0 p-4">
-      <div class="max-w-3xl w-full">
-        <h1 class="text-5xl font-bold mb-12 text-center">Resumo</h1>
     
-        <div class="relative border-l-4 border-blue-600 pl-6 space-y-10">
     
-          <!-- Item -->
-          <div class="relative">
-            <div class="absolute -left-5 top-1 w-3 h-3 bg-blue-600 rounded-full animate-pulse"></div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-              <h2 class="text-2xl font-semibold">Desenvolvedor Web</h2>
-              <p class="text-sm text-gray-600">Freelancer | 2024 - Atual</p>
-              <p class="mt-2">Ofereço serviços de desenvolvimento Full Stack, incluindo criação de sites responsivos e soluções em Banco de Dados, Python, JavaScript, HTML e CSS.</p>
-            </div>
-          </div>
-    
-          <!-- Item -->
-          <div class="relative">
-            <div class="absolute -left-5 top-1 w-3 h-3 bg-blue-600 rounded-full animate-pulse"></div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-              <h2 class="text-2xl font-semibold">Motorista</h2>
-              <p class="text-sm text-gray-600">Uber | 2021 - Atual</p>
-              <p class="mt-2">Gestão de rotas, atendimento ao cliente e organização. Desenvolvi habilidades de gestão de tempo e comunicação eficaz.</p>
-            </div>
-          </div>
-    
-          <!-- Item -->
-          <div class="relative">
-            <div class="absolute -left-5 top-1 w-3 h-3 bg-blue-600 rounded-full animate-pulse"></div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-              <h2 class="text-2xl font-semibold">Motorista</h2>
-              <p class="text-sm text-gray-600">Hydra Instalações | 2019 - 2021</p>
-              <p class="mt-2">Transporte de materiais e equipamentos para obras, com foco em logística, otimização de rotas e pontualidade. Desenvolvimento de habilidades em organização, atendimento ao cliente e colaboração com equipes de obra.</p>
-            </div>
-          </div>
-    
-          <!-- Item -->
-          <div class="relative">
-            <div class="absolute -left-5 top-1 w-3 h-3 bg-blue-600 rounded-full animate-pulse"></div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-              <h2 class="text-2xl font-semibold">Analista de Monitoramento de Sistemas</h2>
-              <p class="text-sm text-gray-600">Expresso Pégaso | 2013 - 2019</p>
-              <p class="mt-2">Análise de gravações de câmeras rodoviárias, controle de equipamentos de gravação, identificação de eventos críticos e contribuição para a segurança operacional e melhoria de processos.</p>
-            </div>
-          </div>
-    
-          <!-- Item -->
-          <div class="relative">
-            <div class="absolute -left-5 top-1 w-3 h-3 bg-blue-600 rounded-full animate-pulse"></div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-              <h2 class="text-2xl font-semibold">Serviço Militar</h2>
-              <p class="text-sm text-gray-600">Base Aérea dos Afonsos | 2007 - 2013</p>
-              <p class="mt-2">Atuação em segurança de instalações, logística e administração. Experiência em liderança, disciplina, trabalho em equipe e resolução de problemas em ambientes de alta responsabilidade.</p>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    
-
+    <!-- Portfólio -->
     <section id="portfolio"
       class="min-h-screen w-full flex items-center justify-center bg-gray-500 text-white p-8 overflow-auto scroll-mt-14 md:scroll-mt-0">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="https://robertofmarins.github.io/site_TMS/" target="_blank">
         <div class="bg-gray-700 p-4 rounded-lg transform hover:scale-105 transition duration-300">
-          <h2 class="text-xl font-bold mb-2">Projeto 1</h2>
-          <p>Landing page responsiva feita com Tailwind CSS.</p>
+          <img src="../static/assets/image/tms.png" alt="tms engenharia">
+          <h2 class="text-xl font-bold mb-2">TMS Engenharia</h2>
+          <p>Landing page responsiva feita com HTML e CSS.</p>
         </div>
+        </a>
+
         <div class="bg-gray-700 p-4 rounded-lg transform hover:scale-105 transition duration-300">
           <h2 class="text-xl font-bold mb-2">Projeto 2</h2>
           <p>Aplicação CRUD com Python e Postgres.</p>
         </div>
+
         <div class="bg-gray-700 p-4 rounded-lg transform hover:scale-105 transition duration-300">
           <h2 class="text-xl font-bold mb-2">Projeto 3</h2>
           <p>Portfólio pessoal com animações e JavaScript.</p>
@@ -181,6 +127,7 @@
       </div>
     </section>
 
+      <!-- Habilidades -->
     <section id="habilidades"
       class="min-h-screen w-full flex flex-col items-center justify-around bg-gray-600 text-white overflow-hidden scroll-mt-14 md:scroll-mt-0">
     
@@ -224,15 +171,15 @@
 
 
   
-
+    <!-- Contatos -->
     <section id="contatos"
       class="min-h-screen w-full flex flex-col items-center justify-center bg-gray-700 text-white p-8 space-y-6 overflow-auto scroll-mt-14 md:scroll-mt-0">
       <h1 class="text-5xl font-bold">Contatos</h1>
       <form id="form" action="/submit" method="POST" class="w-full max-w-lg space-y-4">
-        <input type="text" placeholder="Nome" class="w-full p-2 rounded text-black bg-white" required>
-        <input type="email" placeholder="Email" class="w-full p-2 rounded text-black bg-white" required>
-        <input type="tel" placeholder="Telefone" class="w-full p-2 rounded text-black bg-white">
-        <textarea placeholder="Mensagem" class="w-full p-2 rounded text-black bg-white" rows="4" required></textarea>
+        <input type="text" name="nome" placeholder="Nome" class="w-full p-2 rounded text-black bg-white" required>
+        <input type="email" name="email" placeholder="Email" class="w-full p-2 rounded text-black bg-white" required>
+        <input type="tel" name="telefone" placeholder="Telefone" class="w-full p-2 rounded text-black bg-white">
+        <textarea name="mensagem" placeholder="Mensagem" class="w-full p-2 rounded text-black bg-white" rows="4" required></textarea>
         <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded">Enviar</button>
       </form>
       <div
@@ -250,6 +197,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="w-screen bg-gray-800 text-white text-center py-4">
       <p>&copy; 2025 Roberto Marins. Todos os direitos reservados.</p>
     </footer>

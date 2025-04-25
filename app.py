@@ -20,9 +20,10 @@ def index():
 # Rota para processar os dados enviados
 @app.route("/submit", methods=["POST"])
 def submit():
-    nome = request.form["name"]
+    nome = request.form["nome"]
     email = request.form["email"]
     telefone = request.form["telefone"]
+    mensagem = request.form["mensagem"]
 
     try:
         # Conectar ao banco de dados PostgreSQL
@@ -30,7 +31,7 @@ def submit():
         cur = conn.cursor()
 
         # Inserir os dados no banco de dados
-        cur.execute("INSERT INTO usuarios (nome, email, telefone) VALUES (%s, %s, %s)", (nome, email, telefone))
+        cur.execute("INSERT INTO usuarios (nome, email, telefone, mensagem) VALUES (%s, %s, %s, %s)", (nome, email, telefone, mensagem))
         conn.commit()
 
         cur.close()
