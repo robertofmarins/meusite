@@ -1,15 +1,19 @@
 from flask import Flask, request, render_template
 import psycopg2
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 
+load_dotenv()
+# Carregar variáveis de ambiente do arquivo .env
 # Configuração da conexão com o banco de dados
 db_config = {
-    "dbname": "postgres",
-    "user": "postgres.tdmatydkdczvyaftjqzp",
-    "password": "Pretinha123**",
-    "host": "aws-0-sa-east-1.pooler.supabase.com",
-    "port": "6543"
+    "dbname": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "host": os.getenv("DB_HOST"),
+    "port": os.getenv("DB_PORT")
 }
 
 # Rota para exibir o formulário
