@@ -22,6 +22,7 @@ meu-site/
 ├── tailwind.config.js
 ├── package.json
 └── README.md
+`text`
 
 ## 🧩 Funcionalidades
 
