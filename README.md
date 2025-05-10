@@ -6,21 +6,27 @@ Este é o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo d
 
 ## 🚀 Tecnologias Utilizadas
 
+- Python 3.x + Flask
+- HTML5, CSS3 e JavaScript
 - Tailwind CSS
-- JavaScript (ES6+)
-- HTML5 e CSS3
+- Vercel (deploy)
+- Node.js (para gerenciar dependências do frontend)
 
 ## 📁 Estrutura do Projeto
 ```text
-meu-site/
-├── public/
-├── src/
+meusite/
+├── static/
 │   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   └── App.jsx
-├── tailwind.config.js
+│   │   ├── image/
+│   │   ├── js/
+│   │   └── styles/
+├── templates/
+│   └── index.html
+├── App.py
+├── package-lock.json
 ├── package.json
+├── requirements.txt
+├── vercel.json
 └── README.md
 ```
 
