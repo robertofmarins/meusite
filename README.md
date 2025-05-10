@@ -11,13 +11,14 @@ Este é o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo d
 - HTML5 e CSS3
 
 ## 📁 Estrutura do Projeto
+```text
 meu-site/
 ├── public/
 ├── src/
-│ ├── assets/
-│ ├── components/
-│ ├── pages/
-│ └── App.jsx
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
 ├── tailwind.config.js
 ├── package.json
 └── README.md
