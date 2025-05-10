@@ -37,7 +37,6 @@ Este é o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo d
 - Design responsivo
 - Efeito de máquina de escrever na home
 - Seções: Sobre mim, Habilidades, Projetos, Contato
-- Avatar personalizado no estilo flat minimalista
 
 ## 📬 Contato
 
