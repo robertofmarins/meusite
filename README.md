@@ -14,20 +14,21 @@ Este é o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo d
 
 ## 📁 Estrutura do Projeto
 ```text
-meusite/
 ├── static/
-│   ├── assets/
-│   │   ├── image/
-│   │   ├── js/
-│   │   └── styles/
+│   └── assets/
+│       ├── image/
+│       ├── js/
+│       └── styles/
 ├── templates/
 │   └── index.html
-├── App.py
+├── .gitignore
+├── LICENSE
+├── README.md
+├── app.py
 ├── package-lock.json
 ├── package.json
 ├── requirements.txt
-├── vercel.json
-└── README.md
+└── vercel.json
 ```
 
 ## 🧩 Funcionalidades
