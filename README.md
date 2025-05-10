@@ -34,7 +34,7 @@ meu-site/
 
 Se quiser conversar ou colaborar em algum projeto:
 
-- Email: [contato@robertomarins.com.br]
+- Email: contato@robertomarins.com.br
 - LinkedIn: [https://www.linkedin.com/in/robertofmarins](https://www.linkedin.com/in/robertofmarins)
 
 ## 📝 Licença
